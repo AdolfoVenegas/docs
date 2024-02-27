@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body{
+    background-color: #c1c1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+main{
+    background-color: #f5f5f5;
+    width: 50rem;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
+}
+main section{
+    padding: 2rem 0;
+}
+main section h1{
+    text-transform: capitalize;
+    margin: 0 0 1rem;
+    font-size: 1.5em;
+}
+main section:first-child form{
+    width: 100%;
+}
+main section:first-child form fieldset{
+    border: 2px dashed #282828;
+    padding: 1rem 2rem;
+}
+main section:first-child form fieldset legend{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+    font-size: 1.2em;
+}
+main section:first-child form fieldset div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmin 0;
+}
+main section:first-child form fieldset div label{
+    text-transform: capitalize;
+    margin: 0 0 1vmin;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+main section:first-child form fieldset div input[type=text]{
+    padding: 1vmin;
+    width: 100%;
+    border: none;
+}
+main section:first-child form fieldset div input[type=text]::placeholder{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+main section:first-child form fieldset div button{
+    width: 10rem;
+    background-color: #282828;
+    text-transform: capitalize;
+    padding: 1vmin 0;
+    margin: 1vmin 0;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+main section:nth-child(2) h2{
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+main section:nth-child(2) input[type=text]{
+    padding: 1vmin;
+    width: 100%;
+    border: none;
+    margin: 2vmin 0;
+}
+main section:nth-child(2) div.campos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section:nth-child(2) div.campos span{
+    display: flex;
+    padding: 1vmin 2vmin;
+    flex: 1;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+main section:nth-child(2) div span:first-child,
+main section:nth-child(2) div span:nth-child(3){
+    background-color: #282828;
+    color: #f5f5f5;
+}
+main section:nth-child(2) div span:nth-child(2){
+    background-color: #c1c1c1;
+    color: #282828;
+}
+.search{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search input[type=text]{
+    flex: 0 0 90%;
+    height: 3rem;
+    border-bottom: 4px solid #282828!important;
+    outline: none;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 1.2em;
+}
+.search button{
+    border: none;
+    background-color: #282828;
+    height: 3rem;
+    flex: 0 0 10%;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 90%;
+        padding: 4vmin;
+    }
+    main section:first-child form fieldset{
+        padding: 3vmin;
+    }
+    main section:first-child form fieldset div input[type=text]{
+        padding: 2vmin;
+    }
+    .search input[type=text]{
+        flex: 0 0 80%;
+    }
+    .search button{
+        flex: 0 0 20%;
+    }
+    main section:nth-child(2) div.campos{
+        flex-direction: column;
+    }
+    main section:nth-child(2) div.campos span{
+        padding: 3vmin 2vmin;
+    }
+}
