@@ -78,7 +78,7 @@ main section:nth-child(2) h2{
     text-transform: capitalize;
     font-size: 1.3em;
 }
-main section:nth-child(2) input[type=text]{
+main section:nth-child(2) input[type=number]{
     padding: 1vmin;
     width: 100%;
     border: none;
@@ -137,7 +137,7 @@ main section:nth-child(2) div span:nth-child(2){
     main section:first-child form fieldset div input[type=text]{
         padding: 2vmin;
     }
-    .search input[type=text]{
+    .search input[type=number]{
         flex: 0 0 80%;
     }
     .search button{
